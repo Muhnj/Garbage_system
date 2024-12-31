@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Seekers</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Load Google Maps API (make sure to replace YOUR_API_KEY with your own key) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPabBwAFn1X_-G2dIUXlyQCjSC3Ag-roU &callback=initMap" async defer></script>
+</head>
+<body>
+    <header>
+        <h1>Garbage Seekers</h1>
+    </header>
+
+    <!-- Google Maps Section -->
+    <section id="mapSection">
+        <h2>Location</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Payment Section -->
+    <section id="paymentSection">
+        <h2>Make a Payment</h2>
+        <form id="paymentForm">
+            <input type="number" id="amount" placeholder="Enter amount" required />
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+
+    <!-- Text Section -->
+    <section id="textSection">
+        <h2>Send a Message</h2>
+        <textarea id="message" placeholder="Type your message"></textarea>
+        <button onclick="sendMessage()">Send</button>
+    </section>
+
+    <!-- Online Call Section -->
+    <section id="callSection">
+        <h2>Call Us</h2>
+        <button onclick="startCall()">Start Call</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Garbage Seekers </p>
+    </footer>
+
+    <!-- JS Script -->
+    <script src="script.js"></script>
+</body>
+</html>
